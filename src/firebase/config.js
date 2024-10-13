@@ -1,17 +1,21 @@
 import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCuHxnmuF2RR4tBY0n-POnoACVtg44GWrU",
-  authDomain: "coderhouse-60030.firebaseapp.com",
-  projectId: "coderhouse-60030",
-  storageBucket: "coderhouse-60030.appspot.com",
-  messagingSenderId: "964335960966",
-  appId: "1:964335960966:web:c82934c2703eee73f52207"
+  apiKey: "AIzaSyDXP4rwgPJ61w_Z6DhJ1uX3ZVMpXEr4CAc",
+  authDomain: "coderhouse-60030-69bd5.firebaseapp.com",
+  projectId: "coderhouse-60030-69bd5",
+  storageBucket: "coderhouse-60030-69bd5.appspot.com",
+  messagingSenderId: "111178947185",
+  appId: "1:111178947185:web:9d56f70a4cc4efa119d9d0",
+  measurementId: "G-BZL1ZRPTDC"
 };
 
-// Inicializamos el servicios de Firebase
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
-// Inicializamos la base de datos
-export const db = getFirestore(app);
+// inicializamos la base de datos
+
+export const db= getFirestore(app,analytics);

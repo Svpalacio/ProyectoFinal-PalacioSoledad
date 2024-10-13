@@ -17,7 +17,8 @@ import {
     // Set es una estructura de datos que no permite duplicados
     // const uniqueCategories = [...new Set(categories)];
     // console.log(uniqueCategories)
-    return (
+    
+    return (products.length === 0 ? (<Box>No hay productos para mostrar</Box >) : 
       <Box display={"flex"} flexWrap={"wrap"}>
         {products.map((product) => (
           <Card key={product.id} maxW="sm" margin={"1rem"}>

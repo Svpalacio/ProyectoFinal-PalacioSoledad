@@ -17,7 +17,7 @@ import {
   import { CartWidget } from "../CartWidget";
   import { Link } from "react-router-dom";
   import { useItemsCollection } from "../../hooks";
-  // import { createProductsFirestore } from "../../helpers";
+  import { createProductsFirestore } from "../../helpers";
   
   export const NavBar = () => {
     const { colorMode, toggleColorMode } = useColorMode();
